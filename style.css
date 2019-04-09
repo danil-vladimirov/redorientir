@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+/* canvas {
+  display: block;
+}
+#cont {
+  font-family: arial;
+  text-align: center;
+  font-size: 3vw;
+} */
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: blue;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family: Arial Black;
+  font-size: 5vw;
+  color: white;
+  
+}
+
+#redo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 100; */
+}
+
+#orientir {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 100; */
+}
+
+.top {
+  padding: 1vw;
+  font-family: Arial Black;
+  font-size: 2vw;
+  color: blue;
+  z-index: 1;
+  position: fixed;
+  /* line-height: 13vw; */
+}
+/* .top a {
+  color: blue;
+} */
