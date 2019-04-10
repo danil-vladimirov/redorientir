@@ -1,38 +1,29 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
+@font-face {
+  font-family: 'Black';
+  src: url('fontface_black.otf');
 }
-/* canvas {
-  display: block;
+
+@font-face {
+  font-family: 'Regular';
+  src: url('fontface_regular.otf');
 }
-#cont {
-  font-family: arial;
-  text-align: center;
-  font-size: 3vw;
-} */
+
 * {
   box-sizing: border-box;
 }
 
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: blue;
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 .wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
-  font-family: Arial Black;
-  font-size: 5vw;
-  color: white;
-  
+  align-items: center;
+  justify-content: center;
 }
 
 #redo {
@@ -40,7 +31,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 100; */
+  font-family: 'Black';
+  font-size: 5vw;
+  color: white;
 }
 
 #orientir {
@@ -48,18 +41,82 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 100; */
+  font-family: 'Black';
+  font-size: 5vw;
+  color: white;
+  padding-right: 3vw;
 }
 
-.top {
-  padding: 1vw;
-  font-family: Arial Black;
-  font-size: 2vw;
-  color: blue;
-  z-index: 1;
+.top-invite {
+  font-family: 'Regular';
+  font-size: 2.5vw;
+  align-self: center;
   position: fixed;
-  /* line-height: 13vw; */
+  top: 0;
+  margin-top: 1vh;
+  color: rgb(100, 100, 100);
 }
-/* .top a {
-  color: blue;
-} */
+
+.bottom-time-place {
+  font-family: 'Regular';
+  font-size: 2.5vw;
+  bottom: 0;
+  position: fixed;
+  margin-bottom: 1vh;
+  color: rgb(100, 100, 100);
+}
+
+.top-invite a {
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+}
+
+.top-invite a:hover {
+  transform: matrix(1, 0.03, 0, 0.8, 0, 0);
+  transition: 0.1s;
+}
+ 
+.link{
+  display: inline-block;
+  transition: 0.2s;
+}
+
+ .link:hover {
+  transform: matrix(1, 0.03, 0, 0.8, 0, 0);
+  transition: 0.1s;
+}
+
+
+
+
+ @media screen and (max-width: 468px) {
+  
+  .wrapper {
+    flex-direction: column;
+  }
+
+  #redo {
+    width: 100%;
+    height: 50vh;
+    font-size: 15vw;
+    /* padding-top: 15vh; */
+  }
+  
+  #orientir {
+    width: 100%;
+    height: 50vh;
+    font-size: 15vw;
+    /* padding-bottom: 15vh; */
+  }
+
+  .top-invite {
+    font-size: 5vw;
+    margin-top: 1vh;
+  }
+  
+  .bottom-time-place {
+    font-size: 5vw;
+    margin-bottom: 1vh;
+  }
+  
+}
